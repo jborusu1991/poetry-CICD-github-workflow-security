@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mylambda-app"
+version = "0.1.0"
+description = ""
+authors = ["jborusu <jborusu@oneweb.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+jinja2 = "^3.1.4"
+requests = "^2.32.5"
+stomp-py = "8.1.2"
+awslambdaric = "3.1.0"
+
+
+
+[[tool.poetry.source]]
+name = "ow-pypi"
+url = "https://nexus.dev.ow.net/repository/ow-pypi/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
